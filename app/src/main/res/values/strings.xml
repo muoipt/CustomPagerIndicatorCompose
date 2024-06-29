@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomPagerIndicatorCompose</string>
+    <string name="cute_cat">Cute cat</string>
+    <string name="cute_dog">Cute dog</string>
+</resources>
