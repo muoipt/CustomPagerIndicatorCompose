@@ -1,4 +1,4 @@
-package nami.ai.custompagerindicatorcompose
+package muoipt.custompagerindicatorcompose
 
 data class AnimalCardData(
     val img: Int = 0,

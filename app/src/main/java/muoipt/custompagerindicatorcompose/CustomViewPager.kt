@@ -1,4 +1,4 @@
-package nami.ai.custompagerindicatorcompose
+package muoipt.custompagerindicatorcompose
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.dp
 import com.google.accompanist.pager.HorizontalPager
 import com.google.accompanist.pager.HorizontalPagerIndicator
 import com.google.accompanist.pager.rememberPagerState
-import nami.ai.custompagerindicatorcompose.ui.theme.CustomPagerIndicatorComposeTheme
+import muoipt.custompagerindicatorcompose.ui.theme.CustomPagerIndicatorComposeTheme
 
 @Composable
 fun CustomViewPager(

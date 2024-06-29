@@ -1,4 +1,4 @@
-package nami.ai.custompagerindicatorcompose
+package muoipt.custompagerindicatorcompose
 
 import org.junit.Test
 

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "nami.ai.custompagerindicatorcompose"
+    namespace = "muoipt.custompagerindicatorcompose"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "nami.ai.custompagerindicatorcompose"
+        applicationId = "muoipt.custompagerindicatorcompose"
         minSdk = 28
         targetSdk = 34
         versionCode = 1

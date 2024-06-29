@@ -1,4 +1,4 @@
-package nami.ai.custompagerindicatorcompose.ui.theme
+package muoipt.custompagerindicatorcompose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
