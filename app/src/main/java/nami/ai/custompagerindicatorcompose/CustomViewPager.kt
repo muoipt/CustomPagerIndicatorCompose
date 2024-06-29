@@ -1,6 +1,7 @@
 package nami.ai.custompagerindicatorcompose
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.aspectRatio
@@ -21,6 +22,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.google.accompanist.pager.HorizontalPager
+import com.google.accompanist.pager.HorizontalPagerIndicator
 import com.google.accompanist.pager.rememberPagerState
 import nami.ai.custompagerindicatorcompose.ui.theme.CustomPagerIndicatorComposeTheme
 
@@ -38,28 +40,34 @@ fun CustomViewPager(
         Box(
             modifier = Modifier
                 .fillMaxWidth()
-                .aspectRatio(3 / 4f)
+                .wrapContentHeight()
         ) {
             HorizontalPager(
                 count = itemList.size,
                 state = pagerState,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .wrapContentHeight()
-                    .padding(bottom = 40.dp),
+                    .wrapContentHeight(),
                 verticalAlignment = Alignment.CenterVertically,
             ) { page ->
                 AnimalCardView(itemList[page])
             }
         }
 
+        HorizontalPagerIndicator(
+            modifier = Modifier
+                .padding(50.dp)
+                .align(Alignment.CenterHorizontally),
+            pagerState = pagerState,
+            pageCount = itemList.size
+        )
 
         CustomHorizontalPagerIndicator(
             pagerState = pagerState,
             modifier = Modifier
                 .align(Alignment.CenterHorizontally),
-            activeColor = Color.Black,
-            inactiveColor = Color.Black.copy(alpha = 0.3F),
+            activeColor = Color.Blue,
+            inactiveColor = Color.Blue.copy(alpha = 0.3F),
         )
     }
 }
